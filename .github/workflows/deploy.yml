@@ -20,12 +20,14 @@ jobs:
           python-version: '3.10'
       - name: Generate HTML file
         run: python build_page.py
+      - name: Verify workspace and generate HTML
+        run: ls -la                    # 列出所有文件，确认 build_page.py 存在
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: '.' # 上传整个目录，GitHub Pages会找到index.html,部署引擎要用v4版本
+          path: '.' # 上传整个目录，GitHub Pages会找到index.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
