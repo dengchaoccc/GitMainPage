@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三 - Tech Card</title>
+    <title>Deng Chao - Tech Card</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,10 +31,13 @@
             margin-bottom: 20px;
         }
         .skills {
+            margin: 20px 0;
+        }
+        .skills-category {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin: 20px 0;
+            margin-bottom: 15px;
         }
         .skill {
             background: #007bff;
@@ -44,6 +47,21 @@
             font-size: 0.9em;
         }
         .projects, .contact {
+            margin: 20px 0;
+        }
+        .highlight-number {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        mark {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #ddd;
             margin: 20px 0;
         }
         a {
@@ -57,28 +75,72 @@
 </head>
 <body>
     <div class="container">
-        <h1>张三</h1>
+        <h1>Deng Chao</h1>
         <div class="title">AI Engineer</div>
         <p>AI Engineer passionate about MLOps and automation.</p>
-        <h2>技能</h2>
+        <h2>Skills</h2>
         <div class="skills">
-            <span class="skill">Python</span>
-<span class="skill">TensorFlow</span>
+            <h3>Programming Skills</h3>
+<div class="skills-category">
+<span class="skill">Python</span>
+<span class="skill">C Language</span>
+<span class="skill">C++</span>
+</div>
+<h3>Version Control & DevOps</h3>
+<div class="skills-category">
 <span class="skill">Git</span>
 <span class="skill">CI/CD</span>
 <span class="skill">Docker</span>
+</div>
+<h3>Technical Skills</h3>
+<div class="skills-category">
+<span class="skill">Data structure</span>
+<span class="skill">common algorithm</span>
+<span class="skill">software testing</span>
+</div>
+<h3>Communication & Networking</h3>
+<div class="skills-category">
+<span class="skill">3GPP protocols (RRC, S1/X2)</span>
+<span class="skill">wireless network Architecture (NSA, SA)</span>
+<span class="skill">Wireless signaling process (Attach, Handover,Paging)</span>
+</div>
+<h3>Tools & Software</h3>
+<div class="skills-category">
+<span class="skill">Microsoft Office</span>
+<span class="skill">Photoshop</span>
+<span class="skill">Photography</span>
+</div>
+
         </div>
-        <h2>项目经历</h2>
+        <h2>Experience & Projects</h2>
         <div class="projects">
             <ul>
-                <li><a href="https://github.com/yourusername/project1" target="_blank">项目一</a></li>
-<li><a href="https://github.com/yourusername/project2" target="_blank">项目二</a></li>
+                <hr>
+<li><strong>2012-2018 - 4G Software Development Engineer at Huawei Technologies Inc, Shenzhen China</strong></li>
+<li><strong>Performance improvement features for Huawei 4G Base Station</strong>: <mark>Implemented site-coordination features, convert interference to useful power, site throughput +<span class="highlight-number">10</span>%</mark></li>
+<li><strong>Site capacity expansion</strong>: <mark>Redesigned resource allocation algorithm and data structure, expand cell capacity from <span class="highlight-number">400</span> to <span class="highlight-number">1200</span> users.</mark></li>
+<li><strong>Energy Saving</strong>: <mark>Developed dynamic power control module, reduce base station energy consumption by <span class="highlight-number">15</span>%</mark></li>
+<li><strong>CPU performance optimization</strong>: <mark>Used multiple methods to reduce CPU and memory usage, CPU Usage -<span class="highlight-number">20</span>%.</mark></li>
+<li><strong>Software version manager</strong>: <mark>Be the leader of critical projects, design version developing plan, coordinate with colleagues to finish project on time.</mark></li>
+<hr>
+<li><strong>2018-2021 - 4G/5G Network Maintenance Engineer at Huawei Technologies Inc, Dongguan China</strong></li>
+<li><strong>4G Wireless network maintenance</strong>: <mark>Be the leader of critical projects, design version developing plan, coordinate with colleagues to finish project on time.</mark></li>
+<li><strong>5G Commercial Launch Support</strong>: <mark>Leading critical <span class="highlight-number">5</span>G KPI issue trouble shooting, support massive operators launch <span class="highlight-number">5</span>G on time (Netherlands KPN, Switzerland Sunrise, UK O<span class="highlight-number">2</span> etc.)</mark></li>
+<li><strong>Software upgrade support</strong>: <mark>Support operators software upgrading and led Beta test in Jiangsu.</mark></li>
+<hr>
+<li><strong>2021-2024 -  Wireless Product Manager at Huawei Morocco, Rabat-Morocco</strong></li>
+<li><strong>Network insight</strong>: <mark>As the Internal technical leader for network insight, responsible for big data analysis through digital platform/Python scripts and provide target network evolution proposal. Organized technical meetings with various level customers and presented as speaker <span class="highlight-number">10</span>+ times.</mark></li>
+<li><strong>Network solution proposal</strong>: <mark>Design proper technology and business solution to solve customer concerns and network expansion issues.</mark></li>
+<li><strong>Commercial negotiation</strong>: <mark>Lead price negotiation for <span class="highlight-number">10</span>+ projects, total amount to xx M USD.</mark></li>
+<li><a href="https://github.com/dengchaoccc/HelloWorld7017.git" target="_blank">Python Learning Demos</a></li>
+<li><a href="https://github.com/dengchaoccc/Xu-Training.git" target="_blank">Xu University Training</a></li>
+
             </ul>
         </div>
-        <h2>联系方式</h2>
+        <h2>Contact Information</h2>
         <div class="contact">
             <p>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+                <a href="https://github.com/dengchaoccc" target="_blank">GitHub</a> |
                 <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
             </p>
         </div>
